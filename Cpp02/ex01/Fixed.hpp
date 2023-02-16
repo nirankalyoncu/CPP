@@ -21,8 +21,6 @@ class Fixed
 	int		getRawBits(void) const;
 	float toFloat( void ) const;
 	int toInt( void ) const;	
-	friend std::ostream& operator << (std::ostream&, const Fixed&);
 };
-std::cout << number;
-std::cin >> number;
+std::ostream& operator << (std::ostream&, const Fixed&);
 #endif

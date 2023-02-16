@@ -4,7 +4,6 @@
 std::ostream& operator <<(std::ostream& osObject,const Fixed& fixedObject)
 {
 	osObject<<fixedObject.toFloat()<<std::endl;
-	//return (o << f.toFloat());
 	return(osObject);
 }
 
@@ -33,7 +32,6 @@ Fixed::Fixed(const Fixed& oth)
 {
 	std::cout<<"Copy constructor called"<<std::endl;
 	*this=oth;
-	//this->number=oth.number;
 }
 
 Fixed &Fixed::operator=(const Fixed& oth)
